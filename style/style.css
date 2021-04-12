@@ -214,5 +214,24 @@ footer div:first-child{
    
 }
 
+footer{   
+    display: block;     
+    margin-top: 0px;    
+    margin-right: auto;
+    margin-left: auto;
+    padding:  0;
+
+}
+
+footer div{
+  float:none;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  margin-bottom:20px;
+  
+}
+
+
 
 }
