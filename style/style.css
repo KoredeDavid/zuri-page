@@ -1,7 +1,7 @@
 body{
     margin: 0;
+    padding: 0;
     font-family: candara;
-    transition-duration: 5s;
 
 }
 .nav-bar{        
@@ -175,7 +175,10 @@ footer div:first-child{
     font-size: 30px;
 }
 
-
+.from{
+    font-size:50px;
+     font-weight: 500px
+}
 @media screen and (max-width:1022px) {
     .zuri-training{
        float: none;       
@@ -249,4 +252,14 @@ margin-bottom: 0
     color:white 
 }
 
+
+.welcome{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.from{
+    font-size: 20px;
+    font-weight: 500;
+}
 }
