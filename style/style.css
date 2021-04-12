@@ -130,35 +130,12 @@ body{
     width: 300px;
     height: 40px;
     border-radius: 18px;
+    border: 2px solid black;
+
     padding-left: 10px;
 }
 
-/* 
 
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-    opacity: 1;
-    transition: 0.3s;
-  }
-  
-button:focus {
-    outline: 0;
-  }
-  
-button {
-    padding: 1px;
-    margin: 1px;
-    width: 100px;
-    height: 40px;
-    font-size: 24px;
-    font-weight: 700;
-  
-  } */
 
   button{
     width: 100px;
@@ -197,7 +174,7 @@ footer div:first-child{
 
 @media screen and (max-width:1022px) {
     .zuri-training{
-        display: block;        
+       float: none;       
         width: 80%;
         margin:0 10% 20px 10%;
         padding: 0 0px;
@@ -214,14 +191,14 @@ footer div:first-child{
 }
 
 .join-us{
-    background: none;
+    background: #00AAFF;
     color:black
 }
 
 
 .form{
     display:block;
-    display: block;
+  
     margin-left:auto;
     margin-right:auto;
     margin-top: 15px;
@@ -231,10 +208,10 @@ footer div:first-child{
 
 .form input{
     display: block;        
-    width: 80%;
-    margin:0 10% 20px 10%;
-    padding: 0 0px;
-    border-right: none
+    width: 65%;
+    margin:0 17.5% 20px 17.5%;
+    padding-left: 10px;
+   
 }
 
 
