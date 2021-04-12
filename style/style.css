@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    font-family: candara;
+    transition-duration: 5s;
+
+}
+.nav-bar{        
+   
+    margin: 0 0px 0 0px;
+    /* margin-left: 2px; */
+    padding: 20px 50px 20px 50px;
+    position: fixed;  
+    top: 0px;
+    left: 0px;
+    right: 0px;     
+    
+    background: #221C23;      
+ }
+
+
+ 
+ .nav-item{       
+    color: white;
+    margin-right: 50px;
+    text-decoration: none;
+
+
+ }
+
+
+.nav-item:last-child{
+    margin: 0
+}
+
+
+ .button{
+    background-color: #00AAFF;
+    color: white;
+    border: 2px solid #00AAFF;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 1s;
+    border-radius: 52px; }
+    
+
+.button:hover{
+    color: #00AAFF;
+    background: white;
+    border: 2px solid #00AAFF;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 52px; 
+    transition-duration: 1s;
+
+}
+
+.zuri-welcome-image{
+    background: url("../img/zuri_landing.jpeg") no-repeat fixed;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 400px;
+    color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin: 0px 0 50px 0 
+}
+
+.welcome{
+    font-weight: 700;
+    font-size: 100px;
+    
+}
+
+.main{
+   text-align: center;
+}
+
+.zuri-message{
+    margin-top: 20px;    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.zuri-training{
+    float: left;
+    width: 26.7%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 10px;
+    border-right: 2px solid black;
+}
+
+.zuri-training:last-child{
+    border-right: none
+
+}
+
+.join-us{
+    background-color: #00AAFF;
+    /* display: flex;    
+    justify-content: center;
+    align-items: center; */
+    color:white;
+    font-weight: 700;
+    margin: 50px 0 50px 0;
+    padding: 0px 0 20px 0
+    
+}
+
+.form{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 100px 0px;
+}
+
+.form input{
+    margin-right: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 18px;
+    padding-left: 10px;
+}
+
+/* 
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+button:focus {
+    outline: 0;
+  }
+  
+button {
+    padding: 1px;
+    margin: 1px;
+    width: 100px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+  
+  } */
+
+  button{
+    width: 100px;
+    height: 40px;
+    font-size: 19px;
+    font-weight: 200;
+  }
+
+  footer{
+      background: #221C23;
+      color: white;
+      margin-top: 50px;    
+      display: flex;    
+      justify-content: center;
+      align-items: center;
+      padding: 60px 0 60px 0;
+  }
+
+footer div{
+    float:left;
+    margin-right:50px;
+    /* font-weight: 700; */
+    font-size: 20px;
+    margin-right: 200px
+}
+
+footer div:last-child{
+    margin-right: 0px
+}
+
+footer div:first-child{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width:1139px) {
+    .zuri-training{
+        display: block;
+    }
+
+}
