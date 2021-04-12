@@ -32,6 +32,10 @@ body{
     margin: 0
 }
 
+.dot{
+    display: none;
+    
+}
 
  .button{
     background-color: #00AAFF;
@@ -216,7 +220,7 @@ footer div:first-child{
 
 footer{   
     display: block;     
-    margin-top: 0px;    
+    margin-bottom: 0px;    
     margin-right: auto;
     margin-left: auto;
     padding:  0;
@@ -232,6 +236,17 @@ footer div{
   
 }
 
+footer div:last-child{
+margin-bottom: 0
+}
 
+.nav-bar .right{
+    display: none;
+}
+
+.dot{
+    float:right;
+    color:white 
+}
 
 }
