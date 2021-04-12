@@ -94,13 +94,20 @@ body{
     border-right: 2px solid black;
 }
 
+
+.zuri-training:after{
+    content: "";
+    display: table;
+    clear:both
+}
+
 .zuri-training:last-child{
     border-right: none
 
 }
 
 .join-us{
-    background-color: #00AAFF;
+    background: #00AAFF;
     /* display: flex;    
     justify-content: center;
     align-items: center; */
@@ -188,9 +195,47 @@ footer div:first-child{
 }
 
 
-@media screen and (max-width:1139px) {
+@media screen and (max-width:1022px) {
     .zuri-training{
-        display: block;
+        display: block;        
+        width: 80%;
+        margin:0 10% 20px 10%;
+        padding: 0 0px;
+        border-right: none
+
     }
+    .zuri-message{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 15px;
+   
+
+}
+
+.join-us{
+    background: none;
+    color:black
+}
+
+
+.form{
+    display:block;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 15px;
+}
+
+
+
+.form input{
+    display: block;        
+    width: 80%;
+    margin:0 10% 20px 10%;
+    padding: 0 0px;
+    border-right: none
+}
+
 
 }
