@@ -62,21 +62,77 @@ body{
 .zuri-welcome-image{
     background: url("../img/zuri_landing.jpeg") no-repeat fixed;
     background-size: cover;
-    padding-top: 300px;
-    padding-bottom: 400px;
-    color: white;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    text-align: center;
-    margin: 0px 0 50px 0 
+    padding: 170px 0 250px 0 ;
+    color: white;   
+    width: 100%;
+    height: auto;
+
+    display: flex;
 }
 
-.welcome{
-    font-weight: 700;
-    font-size: 100px;
+.explore{
+    flex: 1;
+    /* border: 2px solid #00AAFF; */
+
+    margin-right: 20px;
+    margin-left:80px
+}
+
+.welcome-form{
+    margin-right:80px;
+    flex: 1;
+    
+
+    padding: 0px 0px 0px 300px;
+    text-align: center;
+    /* border: 2px solid #00AAFF; */
+
+   
+    
+    /* margin: 45px 50px 1050px 0; */
     
 }
+.actual-form{
+    background: white;
+    text-align: center;
+    padding: 10px 0 20px 0;
+   border-radius: 24px;
+
+}
+.actual-form input{
+    color: #9FA2A4;
+    margin-top: 30px;
+    width: 300px;
+    height: 10px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    padding: 0 0 10px 10px;
+
+}
+
+
+
+.welcome{
+    font-weight:700;
+    font-size: 50px;
+    
+}
+
+.from{
+    font-size:24px;
+    font-weight: 400
+}
+
+
+.learn:last-child{
+    font-size:20px;
+    font-weight: 700;
+   padding: 5px;
+    cursor: pointer;
+}
+
+
 
 .main{
    text-align: center;
@@ -118,7 +174,7 @@ body{
     color:white;
     font-weight: 700;
     margin: 50px 0 50px 0;
-    padding: 0px 0 20px 0
+    padding: 30px 0 30px 0
     
 }
 
@@ -141,12 +197,12 @@ body{
 
 
 
-  button{
-    width: 100px;
+button{
+    width: 200px;
     height: 40px;
     font-size: 19px;
     font-weight: 200;
-  }
+}
 
   footer{
       background: #221C23;
@@ -175,9 +231,12 @@ footer div:first-child{
     font-size: 30px;
 }
 
-.from{
-    font-size:50px;
-     font-weight: 500px
+
+
+@media screen and (max-width:1207px) {
+.welcome-form{
+    display:none
+}
 }
 @media screen and (max-width:1022px) {
     .zuri-training{
@@ -185,7 +244,9 @@ footer div:first-child{
         width: 80%;
         margin:0 10% 20px 10%;
         padding: 0 0px;
-        border-right: none
+        border-right: none;
+        border-bottom: 2px solid black;
+
 
     }
     .zuri-message{
@@ -262,4 +323,10 @@ margin-bottom: 0
     font-size: 20px;
     font-weight: 500;
 }
+
+.learn{
+    font-size: 30px;
+    font-weight: 700;
+}
+
 }
