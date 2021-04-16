@@ -272,6 +272,15 @@ footer div:first-child{
 
 }
 
+.zuri-welcome-image{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+}
+.explore{    
+    margin-left: 10px;    
+}
 
 .join-us i{
     font-size: 18
@@ -350,7 +359,9 @@ margin-bottom: 0
     font-size: 20px;
     font-weight: 500;
 }
-
+.zuri-image{
+    max-width: 280px;
+}
 .learn{
     font-size: 30px;
     font-weight: 700;
