@@ -247,8 +247,8 @@ footer div:first-child{
 @media screen and (max-width:1022px) {
     .zuri-training{
        float: none;       
-        width: 80%;
-        margin:0 5px 10px 5p;
+        width: 90%;
+        margin:0 5% 10px 5%;
         padding: 0 0px;
         border-right: none;
         border-bottom: 1px solid black;
@@ -264,6 +264,9 @@ footer div:first-child{
 
 }
 
+.zuri-training:first-child{
+    border-top: 1px solid black;
+}
 .join-us span{
     font-size: 20
 
@@ -317,7 +320,7 @@ margin-bottom: 0
 }
 
 .nav-bar{
-    padding: 5px;
+    padding: 10px;
 }
 
 .main span :first-child{
@@ -333,9 +336,9 @@ margin-bottom: 0
 }
 
 .dot{
-    float:right;
-    color:white 
-}
+   display: inline !important;
+   float: right;
+} 
 
 
 .welcome{
