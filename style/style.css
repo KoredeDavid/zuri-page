@@ -1,19 +1,23 @@
+html{
+    zoom: 90%
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: candara;
-
+    background: #E5E5E5
 }
 .nav-bar{        
    
     margin: 0 0px 0 0px;
     /* margin-left: 2px; */
-    padding: 20px 50px 20px 50px;
+    padding: 20px 0px 20px 50px;
     position: fixed;  
     top: 0px;
     left: 0px;
     right: 0px;     
-    
+    font-size: 18px;
     background: #221C23;      
  }
 
@@ -23,18 +27,13 @@ body{
     color: white;
     margin-right: 50px;
     text-decoration: none;
-
-
  }
 
 
-.nav-item:last-child{
-    margin: 0
-}
 
 .dot{
-    display: none;
-    
+    display: none !important;
+    color: white ;
 }
 
  .button{
@@ -62,55 +61,62 @@ body{
 .zuri-welcome-image{
     background: url("../img/zuri_landing.jpeg") no-repeat fixed;
     background-size: cover;
-    padding: 170px 0 250px 0 ;
-    color: white;   
-    width: 100%;
-    height: auto;
-
+    min-height: 700px; 
+    color: white;  
     display: flex;
+    padding-top:197px
 }
 
 .explore{
     flex: 1;
     /* border: 2px solid #00AAFF; */
-
     margin-right: 20px;
-    margin-left:80px
+    margin-left:107px
 }
 
-.welcome-form{
-    margin-right:80px;
-    flex: 1;
-    
 
-    padding: 0px 0px 0px 300px;
+.welcome-form{
+    
+    margin-right:107px;
+    flex: 1;   
+    /* padding: 0px 0px 0px 300px; */
     text-align: center;
     /* border: 2px solid #00AAFF; */
-
-   
-    
     /* margin: 45px 50px 1050px 0; */
     
 }
+
+
 .actual-form{
+    float: right;
     background: white;
     text-align: center;
     padding: 10px 0 20px 0;
    border-radius: 24px;
+   width: 400px;
+   max-width: 400px;
 
 }
 .actual-form input{
     color: #9FA2A4;
     margin-top: 30px;
     width: 300px;
-    height: 10px;
+    min-height: 10px;
     border-right: none;
     border-left: none;
     border-top: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 10px 10px;    
+    transition:  border-bottom 0.5s
+
 
 }
 
+.actual-form input:focus{
+    outline: none;
+    border-bottom: 3px solid #00AAFF;
+    /* transition-duration: 1s; */
+
+}
 
 
 .welcome{
@@ -242,10 +248,10 @@ footer div:first-child{
     .zuri-training{
        float: none;       
         width: 80%;
-        margin:0 10% 20px 10%;
+        margin:0 5px 10px 5p;
         padding: 0 0px;
         border-right: none;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid black;
 
 
     }
@@ -258,11 +264,16 @@ footer div:first-child{
 
 }
 
-.join-us{
-    background: #00AAFF;
-    color:black
+.join-us span{
+    font-size: 20
+
 }
 
+
+.join-us i{
+    font-size: 18
+
+}
 
 .form{
     display:block;
@@ -288,6 +299,7 @@ footer{
     margin-right: auto;
     margin-left: auto;
     padding:  0;
+    font-size: 16px;
 
 }
 
@@ -302,6 +314,18 @@ footer div{
 
 footer div:last-child{
 margin-bottom: 0
+}
+
+.nav-bar{
+    padding: 5px;
+}
+
+.main span :first-child{
+    font-size: 20;
+}
+
+.main span :nth-child(2){
+    font-size: 18;
 }
 
 .nav-bar .right{
