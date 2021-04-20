@@ -18,7 +18,7 @@ body{
     left: 0px;
     right: 0px;     
     font-size: 18px;
-    background: #221C23;      
+    background: rgba(0, 0, 0, 0.8);      
  }
 
 
@@ -142,13 +142,15 @@ body{
 
 .main{
    text-align: center;
+   margin-top: 50px;
 }
 
 .zuri-message{
     margin-top: 20px;    
     display: flex;    
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+
 }
 
 .zuri-training{
@@ -157,7 +159,10 @@ body{
     font-size: 20px;
     font-weight: 400;
     padding: 0 10px;
-    border-right: 2px solid black;
+    min-height: 250px;
+    margin-right: 20px;
+    border:  1px solid #00AAFF;
+    border-radius: 18px;
 }
 
 
@@ -167,10 +172,10 @@ body{
     clear:both
 }
 
-.zuri-training:last-child{
+/* .zuri-training:last-child{
     border-right: none
 
-}
+} */
 
 .join-us{
     background: #00AAFF;
@@ -240,131 +245,151 @@ footer div:first-child{
 
 
 @media screen and (max-width:1207px) {
-.welcome-form{
-    display:none
+    .welcome-form{
+        display:none
+    }
 }
-}
+
 @media screen and (max-width:1022px) {
+
+    .zuri-welcome-image{        
+        min-height: 0px;
+        display: flex;    
+        justify-content: center;
+        align-items: center;   
+        padding-top:0;
+        min-height: 183px;        
+        padding-top: 50px;
+    }
+    
+    .explore{
+        flex: none;
+        /* border: 2px solid #00AAFF; */
+        margin-right: 0px;
+        margin-left:0px;        
+    }
+
     .zuri-training{
-       float: none;       
+        float: none;       
         width: 90%;
         margin:0 5% 10px 5%;
         padding: 0 0px;
-        border-right: none;
-        border-bottom: 1px solid black;
+        
+        border: 1px solid #00AAFF ;
+        border-radius: 18px;
 
+        
+    }
+    
+    .zuri-message{
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 15px;  
+        max-width: 439px
 
     }
-    .zuri-message{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 15px;
-   
 
-}
+    .zuri-training:last-child{
+        border-right: 1px solid #00AAFF;
+    }
 
-.zuri-training:first-child{
-    border-top: 1px solid black;
-}
-.join-us span{
-    font-size: 20
+    .join-us span{
+        font-size: 20
+    }
 
-}
+    .zuri-welcome-image{
+        display: flex;    
+        justify-content: center;
+        align-items: center;        
+    }
 
-.zuri-welcome-image{
-    display: flex;    
-    justify-content: center;
-    align-items: center;
+    .explore{    
+        margin-left: 10px;    
+    }
+
+    .join-us i{
+        font-size: 18
+    }
+
+    .form{
+        display:block;
     
-}
-.explore{    
-    margin-left: 10px;    
-}
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: 15px;
+    }
 
-.join-us i{
-    font-size: 18
+    .form input{
+        display: block;        
+        width: 65%;
+        margin:0 17.5% 20px 17.5%;
+        padding-left: 10px;
+    
+    }
 
-}
+    footer{   
+        display: block;     
+        margin-bottom: 0px;    
+        margin-right: auto;
+        margin-left: auto;
+        padding:  0;
+        font-size: 16px;
 
-.form{
-    display:block;
-  
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 15px;
-}
+    }
 
-
-
-.form input{
-    display: block;        
-    width: 65%;
-    margin:0 17.5% 20px 17.5%;
-    padding-left: 10px;
-   
-}
-
-footer{   
-    display: block;     
-    margin-bottom: 0px;    
-    margin-right: auto;
-    margin-left: auto;
-    padding:  0;
-    font-size: 16px;
-
-}
-
-footer div{
-  float:none;
+    footer div{
+    float:none;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-  margin-bottom:20px;
-  
-}
+    margin-bottom:20px;
+    
+    }
 
-footer div:last-child{
-margin-bottom: 0
-}
+    footer div:last-child{
+    margin-bottom: 0
+    }
 
-.nav-bar{
-    padding: 10px;
-}
+    .nav-bar{
+        padding: 15px;
+    }
 
-.main span :first-child{
-    font-size: 20;
-}
+    .main span :first-child{
+        font-size: 20;
+    }
 
-.main span :nth-child(2){
-    font-size: 18;
-}
+    .main span :nth-child(2){
+        font-size: 18;
+    }
 
-.nav-bar .right{
-    display: none;
-}
+    .nav-bar .right{
+        display: none;
+    }
 
-.dot{
-   display: inline !important;
-   float: right;
-} 
+    .dot{
+    display: inline !important;
+    float: right;
+    } 
 
+    .welcome{
+        font-size: 30px;
+        font-weight: 700;
 
-.welcome{
-    font-size: 30px;
-    font-weight: 700;
+    }
 
-}
-.from{
-    font-size: 20px;
-    font-weight: 500;
-}
-.zuri-image{
-    max-width: 280px;
-}
-.learn{
-    font-size: 30px;
-    font-weight: 700;
-}
+    .from{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .zuri-image{
+        max-width: 280px;
+    }
+
+    .learn{
+        font-size: 30px;
+        font-weight: 700;
+    }
 
 }
