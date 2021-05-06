@@ -1,15 +1,11 @@
-html{
-    zoom: 90%
-}
-
 body{
     margin: 0;
     padding: 0;
     font-family: candara;
     background: #E5E5E5
 }
-.nav-bar{        
-   
+
+.nav-bar{           
     margin: 0 0px 0 0px;
     /* margin-left: 2px; */
     padding: 20px 50px;
@@ -26,9 +22,10 @@ body{
  .nav-item{       
     color: white;
     margin-right: 50px;
-    text-decoration: none;
-    
- }
+    text-decoration: none;       
+}
+
+ 
 
 .nav-bar :last-child{
     margin-right: 0;
@@ -93,22 +90,26 @@ body{
     
 }
 
+.responsive-welcome-form{
+    display:none
+}
+
 
 .actual-form{
     float: right;
     background: white;
     text-align: center;
-    padding: 10px 0 20px 0;
-   border-radius: 24px;
-   width: 400px;
-   max-width: 400px;
-
+    padding: 10px 0px 20px 0px;
+   border-radius: 24px;   
+   width: 70%;
+   border: 2px solid #00AAFF;
+   
 }
 .actual-form input{
     color: #9FA2A4;
-    margin-top: 30px;
-    width: 300px;
+    margin-top: 30px;    
     min-height: 10px;
+    width: 75%;
     border-right: none;
     border-left: none;
     border-top: none;
@@ -149,40 +150,35 @@ body{
 
 .main{
    text-align: center;
-   margin-top: 50px;
+   padding-top: 50px;
 }
 
-.zuri-message{
+#learnmore{
+    padding-top: 54px;
+}
+.parent-card{
     margin-top: 20px;    
     display: flex;    
+    flex-direction: row ;    
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;    
 
 }
 
-.zuri-training{
-    float: left;
+.card{    
     width: 26.7%;
     font-size: 20px;
     font-weight: 400;
     padding: 20px 20px;
-    height: 200px;
-    margin-right: 20px;
+    min-height: 200px;
+    background:white;
+    margin: 20px;
+    width: 400px;
     border:  1px solid #00AAFF;
     border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
-
-
-.zuri-training:after{
-    content: "";
-    display: table;
-    clear:both
-}
-
-/* .zuri-training:last-child{
-    border-right: none
-
-} */
 
 .join-us{
     background: #00AAFF;
@@ -245,26 +241,63 @@ footer div:last-child{
 }
 
 footer div:first-child{
-    font-weight: 700;
+    font-weight: 700
+    ;
     font-size: 30px;
 }
 
+.right{
+    float:right
+}
 
-
-@media screen and (max-width:1207px) {
+@media screen and (max-width:1223px) {
+    .actual-form{
+        width:100%
+    }
+}
+@media screen and (max-width:890px) {
     .welcome-form{
         display:none
     }
-}
-
-@media screen and (max-width:554px){
-    .right{
-        display: none;
+    
+    .responsive-welcome-form{        
+        display:flex;               
+        justify-content: center;        
+        margin-bottom: 40px;
     }
 
-    .dot{
+    
+    
+    .actual-form{
+        float:none;
+        width: 85%
+    }
+    
+}
+
+@media screen and (max-width:567px){
+    .right{                      
+        display:none; 
+        /* position: relative; */
+    }
+
+    
+
+   .responsive {        
+        display: block;        
+        float: none;
+    }
+
+    .responsive a{
+       display: block;        
+       margin-top: 10px;
+    }
+    
+      .dot{
         display: block !important;
-        float:right 
+        float:right ;
+        
+        
     }
 }
 @media screen and (max-width:1022px) {
@@ -276,7 +309,7 @@ footer div:first-child{
     
 
 
-    .zuri-training{
+    /* .card{
         float: none;       
         width: 80%;
         margin:0 auto 10px auto;
@@ -289,16 +322,16 @@ footer div:first-child{
         
     }
     
-    .zuri-message{
+    .parent-card{
         display: block;
         margin-left:auto;
         margin-right:auto;
         margin-top: 15px;  
         max-width: 439px
 
-    }
+    } */
 
-    .zuri-training:last-child{
+    .card:last-child{
         border-right: 1px solid #00AAFF;
     }
 
@@ -342,7 +375,7 @@ footer div:first-child{
         margin-right: auto;
         margin-left: auto;
         padding:  0;
-        font-size: 16px;
+        font-size: 14px;
 
     }
 
